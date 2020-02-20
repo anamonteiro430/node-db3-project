@@ -1,0 +1,36 @@
+@baseUrl = http://localhost:5000
+
+GET {{baseUrl}}/api/schemes/
+
+###
+
+GET {{baseUrl}}/api/schemes/2
+
+###
+
+GET {{baseUrl}}/api/schemes/6/steps
+
+###
+
+POST {{baseUrl}}/api/schemes/
+content-type: application/json
+
+{
+    "scheme_name": "somees scheme"
+}
+
+###
+
+PUT {{baseUrl}}/api/schemes/12
+content-type: application/json
+
+{
+    "scheme_name": "gradussate evesrything"
+}
+
+###
+DELETE {{baseUrl}}/api/schemes/15
+
+
+Accept: application/hal+json
+
